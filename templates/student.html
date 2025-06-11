@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>სტუდენტის დეტალები</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>სტუდენტის დეტალები</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ student['name'] }}</h5>
+                <p class="card-text"><strong>ID:</strong> {{ student['id'] }}</p>
+                <p class="card-text"><strong>ასაკი:</strong> {{ student['age'] }}</p>
+                <p class="card-text"><strong>კლასი:</strong> {{ student['grade'] }}</p>
+            </div>
+        </div>
+        <a href="/" class="mt-3 btn btn-secondary">დაბრუნება მთავარ გვერდზე</a>
+    </div>
+</body>
+</html>
